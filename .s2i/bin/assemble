@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Execute the default S2I script
+source ${STI_SCRIPTS_PATH}/assemble
+
+# Generate static HTML files
+python -m mkdocs build
+
+# Fix source directory permissions
+fix-permissions ./
