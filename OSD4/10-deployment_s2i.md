@@ -1,11 +1,11 @@
 ## Using S2I to build and deploy our application
 
-There are multiple methods to deploy applications in OpenShift. Let's explore using the integrated Source-to-Image (S2I) builder. As mentioned in the [concepts](/OSD4/2-concepts.md) section, S2I is a tool for building reproducible, Docker-formatted container images. 
+There are multiple methods to deploy applications in OpenShift. Let's explore using the integrated Source-to-Image (S2I) builder. As mentioned in the [concepts](2-concepts.md) section, S2I is a tool for building reproducible, Docker-formatted container images. 
 
 #### 0. Retrieve the login command (if not logged in via CLI)
 If not logged in via the CLI, click on the dropdown arrow next to your name in the top-right of the cluster console and select *Copy Login Command*.
 
-Follow the steps from [Step 1](/OSD4/4-deployment.md#1-retrieve-the-login-command) of the Deployment section.
+Follow the steps from [Step 1](4-deployment.md#1-retrieve-the-login-command) of the Deployment section.
 
 #### 1. Fork the repository
 In the next section we will trigger automated builds based on changes to the source code. In order to trigger S2I builds when you push code into your GitHub repo, you’ll need to setup the GitHub webhook.  And in order to setup the webhook, you’ll first need to fork the application into your personal GitHub repository.
